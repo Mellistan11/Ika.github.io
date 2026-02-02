@@ -1,0 +1,56 @@
+:root {
+    --header-height: 60px;
+}
+
+#main-header {  
+    position: fixed;
+    align-content: center;
+    height: var(--header-height);
+    width: calc(100vw - 40px);
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+}
+
+#header-gradient {
+    position: fixed;
+    top: var(--header-height);
+    left: 0px;
+    height: 20px;
+    width: 100vw;
+}
+
+@media (min-width: 800px) {
+
+#main-header-bar {
+    display: grid;
+    grid-template-columns: 70px calc(100% - 170px) 100px;
+    align-items: center;
+    width: 100%;
+    height: 60%;
+}
+
+.main-header-logo  {
+    height: 40px;
+    aspect-ratio: 800/536;
+    width: auto;
+    place-self: center;
+}
+
+#header-nav-container {
+    display: grid;
+    grid-template-columns: repeat(8, 100px);
+    gap: 10px;
+    padding-left: 40px;
+}
+
+.header-nav-element {
+    display: inline-block;
+    box-sizing: content-box;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    align-content: center;
+}
+
+}
