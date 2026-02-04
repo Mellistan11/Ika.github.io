@@ -1,0 +1,12 @@
+@import url("header.css");
+
+body {
+    background-color: rgb(255, 247, 235);
+    margin: 0;
+}
+
+main {
+    display: grid;
+    margin-top: var(--header-height);
+    padding: 0 clamp(15px, 10vw, 100px);
+}
