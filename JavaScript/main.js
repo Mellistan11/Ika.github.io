@@ -68,7 +68,7 @@
         }
     }
 
-    window.addEventListener("scroll", function() {
+    window.addEventListener("scroll", () => {
         const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
         const delta = scrollTop - lastScrollTop;
 
